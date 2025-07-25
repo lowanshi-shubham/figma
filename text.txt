@@ -1,0 +1,14 @@
+src/
+├── components/
+│   └── Header.jsx
+│   └── Sidebar.jsx
+│   └── MeetingCard.jsx
+│   └── NotificationItem.jsx
+├── pages/
+│   └── Dashboard.jsx
+│   └── Meetings.jsx
+│   └── Tasks.jsx
+│   └── Users.jsx
+│   └── AddMeeting.jsx
+├── App.jsx
+├── main.jsx
