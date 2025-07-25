@@ -11,7 +11,6 @@ export default function Sidebar() {
   const menuItems = [
     { name: "Dashboard", icon: <LayoutDashboard />, path: "/" },
     { name: "Buyer Meeting", icon: <Calendar />, path: "/buyer-meeting" },
-    // Add more pages like “Tasks”, “Inventory”, etc.
   ];
 
   return (

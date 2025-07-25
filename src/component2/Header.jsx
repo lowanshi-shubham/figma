@@ -7,7 +7,6 @@ export default function Header() {
   const [showProfileMenu, setShowProfileMenu] = useState(false);
   const profileRef = useRef(null);
 
-  // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (profileRef.current && !profileRef.current.contains(event.target)) {
@@ -20,15 +19,12 @@ export default function Header() {
 
   return (
 <header className="w-full bg-white flex justify-between items-center px-6 py-4 shadow relative">
-  {/* Left Logo */}
   <h2 className="text-xl font-semibold whitespace-nowrap">
     <img src="public/logo.png" alt="Logo" className="h-12" />
   </h2>
 
-  {/* Centered Search */}
   <div className="flex-1 flex justify-center">
     <div className="relative w-full max-w-md">
-      {/* Search Icon inside input */}
       <svg
         className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"
         fill="none"
@@ -51,7 +47,6 @@ export default function Header() {
     </div>
   </div>
 
-  {/* Right Icons */}
   <div className="flex items-center gap-4">
     <MessageCircle
       className="w-5 h-5 text-gray-600 cursor-pointer"

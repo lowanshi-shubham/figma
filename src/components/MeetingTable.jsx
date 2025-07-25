@@ -180,10 +180,10 @@ export default function MeetingTable() {
     <ChevronDown className="w-4 h-4" />
   </Popover.Button>
 
-  <Popover.Panel className="absolute z-10 mt-2 w-40 p-3 bg-white rounded-md shadow-md space-y-2"> {/* Adjusted padding and spacing */}
+  <Popover.Panel className="absolute z-10 mt-2 w-40 p-3 bg-white rounded-md shadow-md space-y-2"> 
     {/* Status */}
     <div>
-      <select className="w-full bg-gray-100 px-2 py-1 rounded text-sm text-gray-700"> {/* Changed width to full */}
+      <select className="w-full bg-gray-100 px-2 py-1 rounded text-sm text-gray-700"> 
         <option>Status</option>
         {unique("status").map((status, i) => (
           <option key={i}>{status}</option>
@@ -191,9 +191,8 @@ export default function MeetingTable() {
       </select>
     </div>
 
-    {/* Meeting Date */}
     <div>
-      <select className="w-full bg-gray-100 px-2 py-1 rounded text-sm text-gray-700"> {/* Changed width to full */}
+      <select className="w-full bg-gray-100 px-2 py-1 rounded text-sm text-gray-700">
         <option>Meeting Date</option>
         {unique("meetingDate").map((date, i) => (
           <option key={i}>{date}</option>
@@ -201,9 +200,8 @@ export default function MeetingTable() {
       </select>
     </div>
 
-    {/* Participants */}
     <div>
-      <select className="w-full bg-gray-100 px-2 py-1 rounded text-sm text-gray-700"> {/* Changed width to full */}
+      <select className="w-full bg-gray-100 px-2 py-1 rounded text-sm text-gray-700"> 
         <option>Participants</option>
         {unique("participent").map((p, i) => (
           <option key={i}>{p}</option>
@@ -211,9 +209,8 @@ export default function MeetingTable() {
       </select>
     </div>
 
-    {/* Meeting Type */}
     <div>
-      <select className="w-full bg-gray-100 px-2 py-1 rounded text-sm text-gray-700"> {/* Changed width to full */}
+      <select className="w-full bg-gray-100 px-2 py-1 rounded text-sm text-gray-700"> 
         <option>Meeting Type</option>
         {unique("type").map((t, i) => (
           <option key={i}>{t}</option>
@@ -222,7 +219,6 @@ export default function MeetingTable() {
     </div>
   </Popover.Panel>
 </Popover>
-      {/* You can add more filters if needed */}
     </div>
 
 

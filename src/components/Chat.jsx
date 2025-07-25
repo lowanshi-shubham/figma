@@ -1,5 +1,5 @@
 import React from "react";
-import { X } from "lucide-react"; // Importing the close icon
+import { X } from "lucide-react";
 
 export default function Chat() {
   const chatMessagesData = [
@@ -26,7 +26,7 @@ export default function Chat() {
   ];
 
   return (
-    <div className="bg-white p-4 rounded-lg"> {/* Removed shadow and fixed width, assuming parent handles it */}
+    <div className="bg-white p-4 rounded-lg"> 
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold text-gray-800">Chat</h2>
         <span className="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">
@@ -39,7 +39,6 @@ export default function Chat() {
           <div key={message.id} className="flex items-center justify-between p-2 hover:bg-gray-50 rounded-md">
             <div className="flex items-center space-x-3">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold text-gray-600">
-                {/* In a real app, this would be an image: <img src="..." alt="User Avatar" /> */}
                 U
               </div>
               <div>
