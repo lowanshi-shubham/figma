@@ -6,6 +6,8 @@ import Dashboard from "./pages/dashboard";
 import BuyerMeetings from "./pages/BuyerMeeting";
 import Chat from "./components/Chat";
 import Notifications from "./components/Notifications";
+import { Archive } from "lucide-react";
+import Draft from "./component2/Draft";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/buyer-meeting" element={<BuyerMeetings />} />
               <Route path="/chat" element={<Chat />} />
+              <Route path="/Draft" element={<Draft />} />
+              <Route path="/Archive" element={<Archive />} />
           <Route path="/notifications" element={<Notifications />} />
             </Routes>
           </main>
