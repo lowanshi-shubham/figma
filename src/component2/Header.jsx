@@ -20,7 +20,7 @@ export default function Header() {
   return (
 <header className="w-full bg-white flex justify-between items-center px-6 py-4 shadow relative">
   <h2 className="text-xl font-semibold whitespace-nowrap">
-    <img src="public/logo.png" alt="Logo" className="h-12" />
+    <img src="/logo.png" alt="Logo" className="h-12" />
   </h2>
 
   <div className="flex-1 flex justify-center">
