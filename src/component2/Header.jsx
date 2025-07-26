@@ -20,7 +20,7 @@ export default function Header() {
   return (
 <header className="w-full bg-white flex justify-between items-center px-6 py-4 shadow relative">
   <h2 className="text-xl font-semibold whitespace-nowrap">
-    <img src="public/logo.png" alt="Logo" className="h-12" />
+    <img src="/logo.png" alt="Logo" className="h-12" />
   </h2>
 
   <div className="flex-1 flex justify-center">
@@ -58,7 +58,7 @@ export default function Header() {
     />
     <div className="relative" ref={profileRef}>
       <img
-        src="public/id.jpg"
+        src="/id.jpg"
         alt="user"
         className="rounded-full w-8 h-8 cursor-pointer"
         onClick={() => setShowProfileMenu(!showProfileMenu)}
