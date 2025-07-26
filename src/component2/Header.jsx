@@ -58,7 +58,7 @@ export default function Header() {
     />
     <div className="relative" ref={profileRef}>
       <img
-        src="public/id.jpg"
+        src="/id.jpg"
         alt="user"
         className="rounded-full w-8 h-8 cursor-pointer"
         onClick={() => setShowProfileMenu(!showProfileMenu)}
